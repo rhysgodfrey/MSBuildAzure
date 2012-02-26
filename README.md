@@ -1,4 +1,5 @@
-﻿# MSBuild Copy To Azure Blob Storage Task #
+﻿MSBuild Copy To Azure Blob Storage Task
+=======================================
 
 ## Introduction ##
 
@@ -44,7 +45,7 @@ selected above to a container named *scripts*:
 	</tr>
 	<tr>
 		<td>ContentType</td>
-		<td>*Optional* The content type for Azure to serve the files as</td>
+		<td><em>Optional</em> The content type for Azure to serve the files as</td>
 	</tr>
 </table>
 
