@@ -1,10 +1,16 @@
 ﻿MSBuild Copy To Azure Blob Storage Task
 =======================================
 
+[![Build status](https://ci.appveyor.com/api/projects/status/wcwgtv6bwu88clid)](https://ci.appveyor.com/project/rhysgodfrey/msbuildazure)
+
 ## Introduction ##
 
 A MSBuild task to allow copying of files to Azure Blob Storage. To save unnecessary copying files are
 only copied if the source files last write time is different to the one tagged against the blob in Azure.
+
+
+## Download ##
+The latest version of the library can be downloaded from the [Latest Release Page](https://github.com/rhysgodfrey/MSBuildAzure/releases/latest).
 
 ## Usage ##
 
@@ -52,6 +58,10 @@ selected above to a container named *scripts*:
 		<td><em>Optional</em> The destination folder to upload the file(s)</td>
 	</tr>
 </table>
+
+## Contributors ##
+
+Thanks to [stephenwelsh](https://github.com/stephenwelsh) and [swythan](https://github.com/swythan) for the updates to this project. If you have an enhancement or fix, please fork the project and submit a pull request! Details of past pull requests can be found [here](https://github.com/rhysgodfrey/MSBuildAzure/pulls?direction=desc&page=1&sort=created&state=closed)
 
 ## License ##
 
