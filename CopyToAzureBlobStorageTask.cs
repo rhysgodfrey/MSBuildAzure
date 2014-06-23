@@ -47,6 +47,12 @@ namespace RhysG.MSBuild.Azure
             set;
         }
 
+		public string DestinationFolder
+        {
+            get;
+            set;
+        }
+		
         public string ContentEncoding
         {
             get;
@@ -80,7 +86,8 @@ namespace RhysG.MSBuild.Azure
             {
                 FileInfo file = new FileInfo(fileItem.ItemSpec);
 
-                CloudBlob blob = container.GetBlobReference(file.Name);
+                string folder = string.IsNullOrEmpty(DestinationFolder) ? "" : DestinationFolder + @"\";
+                CloudBlob blob = container.GetBlobReference(folder + file.Name);
 
                 try
                 {

@@ -47,6 +47,10 @@ selected above to a container named *scripts*:
 		<td>ContentType</td>
 		<td><em>Optional</em> The content type for Azure to serve the files as</td>
 	</tr>
+	<tr>
+		<td>DestinationFolder</td>
+		<td><em>Optional</em> The destination folder to upload the file(s)</td>
+	</tr>
 </table>
 
 ## License ##
@@ -54,4 +58,5 @@ selected above to a container named *scripts*:
 This library is released under the *FreeBSD License*, see **LICENSE.txt** for more information.
 
 Blog: http://www.rhysgodfrey.co.uk
+
 Twitter: @rhysgodfrey
